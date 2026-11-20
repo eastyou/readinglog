@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readinglog"
+version = "0.1.0"
+description = "阅读记录表：书目 CSV 一键生成 A4 可打印记录表"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["reading", "log", "education", "print", "csv", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+readinglog = "readinglog.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/readinglog"
+Source = "https://github.com/eastyou/readinglog"
+
+[tool.setuptools]
+packages = ["readinglog"]
